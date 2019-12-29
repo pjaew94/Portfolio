@@ -1,0 +1,11 @@
+.fullNavBar {
+  width: 100%;
+  height: 8vh;
+  background: white;
+  top: 0;
+  left: 0;
+  border: none;
+  padding: 0;
+  box-shadow: 1px 0px 20px rgba(0,0,0,0.2);
+  position: fixed;
+}
