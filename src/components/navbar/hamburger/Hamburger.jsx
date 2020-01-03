@@ -12,19 +12,16 @@ function Hamburger (props){
   }
 
   return (
-    <div class={hamburgerStatus ? 'menu-toggle turnOn' : 'menu-toggle'} 
+    <div class={hamburgerStatus ? 'col turnOn' : 'col'} 
     onClick={toggleHamburgerClass}>
-      <div class='hamburger'>
-        <span class='line'></span>
-        <span class='line'></span>
-        <span class='line'></span>
-      </div>
-      <div class='cross'>
-        <span></span>
-        <span></span>
+      <div class="con">
+        <div class="bar arrow-top-r"></div>
+        <div class="bar arrow-middle-r"></div>
+        <div class="bar arrow-bottom-r"></div>
       </div>
     </div>
   )
 }
 
 export default Hamburger
+

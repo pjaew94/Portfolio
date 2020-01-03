@@ -1,11 +1,14 @@
 import React, {useState} from 'react';
+import './App.scss'
 import NavBar from './navbar/NavBar'
+import LandingPage from './landing-page/LandingPage'
 
 
 function App() {
   return (
-    <div className="App">
+    <div class='App'>
       <NavBar />
+      <LandingPage />
     </div>
   );
 }
