@@ -1,0 +1,27 @@
+.fade-top-bottom {
+  opacity: 0;
+  transform: translateY(-10vh);
+  visibility: hidden;
+  transition: opacity 2000ms ease-out, transform 2000ms ease-out, visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-top-bottom.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+
+
+.fade-left-right {
+  opacity: 0;
+  transform: translateX(20vh);
+  visibility: hidden;
+  transition: opacity 2000ms ease-out, transform 2000ms ease-out, visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-left-right.is-visible2 {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}

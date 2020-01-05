@@ -7,4 +7,5 @@
   border: none;
   padding: 0;
   position: fixed;
+  z-index: 10;
 }
