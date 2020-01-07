@@ -10,7 +10,7 @@ function LandingPage(props) {
         <div class='openningMsg'>
         <h2 class='jaePark'>Jae Park:</h2>
           <h2 class='intro'>
-            <span class='newLine'>Proud <span class='bold'>WEB DEVELOPER</span></span> <span class='newLine'> Striving for nothing short of <span class='bold'>EXCELLENCE</span></span>
+            <span class='newLine'>Proud <span class='bold'>WEB DEVELOPER</span></span> <span class='newLine2'> Striving for nothing short of <span class='bold'>EXCELLENCE</span></span>
           </h2>
         </div>
       </div>

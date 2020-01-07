@@ -1,7 +1,7 @@
 
 .landingPage {
   width: 100%;
-  height: 92vh;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center space-around;
@@ -40,7 +40,7 @@
 
 .openningMsg h2 {
   font-family: 'Playfair Display SC', serif;
-  background: white;
+  background: rgba(0,0,0,0);
   padding: 10px 0;
 
   span {
@@ -48,9 +48,15 @@
   }
   .bold {
     font-size: 5rem;
+    background: white;
   }
   .newLine {
     display: block;
+  }
+
+  .newLine2 {
+    display: block;
+    background: white;
   }
   z-index: 3;
 }

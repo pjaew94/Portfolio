@@ -21,7 +21,7 @@ function FadeTopBottom(props) {
   );
 }
 
-function FadeLeftRight(props) {
+function WorksRightEffect(props) {
   const [isVisible, setVisible] = React.useState(false);
   const domRef = React.useRef();
   React.useEffect(() => {
@@ -35,7 +35,52 @@ function FadeLeftRight(props) {
   }, []);
   return (
     <div
-      className={`fade-left-right ${isVisible ? 'is-visible2' : ''}`}
+      className={`worksRightEffect ${isVisible ? 'is-visible2' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}
+
+
+function WorksLeftEffect(props) {
+  const [isVisible, setVisible] = React.useState(false);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    const { current } = domRef;
+    observer.observe(current);
+
+    return () => observer.unobserve(current);
+  }, []);
+  return (
+    <div
+      className={`worksLeftEffect ${isVisible ? 'is-visible3' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}
+
+function FadeBottomTop(props) {
+  const [isVisible, setVisible] = React.useState(false);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    const { current } = domRef;
+    observer.observe(current);
+
+    return () => observer.unobserve(current);
+  }, []);
+  return (
+    <div
+      className={`fade-bottom-top ${isVisible ? 'is-visible4' : ''}`}
       ref={domRef}
     >
       {props.children}
@@ -44,4 +89,4 @@ function FadeLeftRight(props) {
 }
 
 export default FadeTopBottom
-export {FadeLeftRight}
+export {WorksRightEffect, WorksLeftEffect, FadeBottomTop}

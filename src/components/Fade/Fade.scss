@@ -4,6 +4,8 @@
   visibility: hidden;
   transition: opacity 2000ms ease-out, transform 2000ms ease-out, visibility 1200ms ease-out;
   will-change: opacity, transform, visibility;
+  width: 100%;
+  height: 100%;
 }
 .fade-top-bottom.is-visible {
   opacity: 1;
@@ -13,14 +15,46 @@
 
 
 
-.fade-left-right {
+.worksRightEffect {
   opacity: 0;
   transform: translateX(20vh);
   visibility: hidden;
   transition: opacity 2000ms ease-out, transform 2000ms ease-out, visibility 1200ms ease-out;
   will-change: opacity, transform, visibility;
+  width: 30%;
+  height: 100%;
 }
-.fade-left-right.is-visible2 {
+.worksRightEffect.is-visible2 {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.worksLeftEffect {
+  opacity: 0;
+  transform: translateX(-20vh);
+  visibility: hidden;
+  transition: opacity 2000ms ease-out, transform 2000ms ease-out, visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+  width: 70%;
+  height: 100%;
+}
+.worksLeftEffect.is-visible3 {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.fade-bottom-top {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 2000ms ease-out, transform 2000ms ease-out, visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+  width: 100%;
+  height: 100%;
+}
+.fade-bottom-top.is-visible4 {
   opacity: 1;
   transform: none;
   visibility: visible;

@@ -32,7 +32,7 @@ function Toolbar (props){
             <li class='nav-hover'>
               <Link 
                 activeClass="active" 
-                to="/" 
+                to="About" 
                 spy={true} 
                 smooth={true} 
                 duration={1200} >
@@ -42,7 +42,7 @@ function Toolbar (props){
             <li class='nav-hover'>
               <Link 
                 activeClass="active" 
-                to="/" 
+                to="Contact" 
                 spy={true} 
                 smooth={true} 
                 duration={1200} >

@@ -1,0 +1,68 @@
+.aboutContainer {
+  height: 100vh;
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center space-around;
+}
+
+
+.aboutLeftContainer {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutRectangle {
+  height: 70%;
+  width: 50%;
+  position: absolute;
+  border-radius: 20px;
+  border: 1px solid black;
+  transform: translateX(-5%);
+  z-index: 1;
+}
+
+.aboutText {
+  font-family: 'Playfair Display SC', serif;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+
+  :first-child {
+    transform: translate(60%);
+    padding-top: 10px;
+  }
+  :last-child {
+    transform: translate(90%);
+    padding-bottom: 10px;
+  }
+}
+
+h2 {
+  font-size: 5rem;
+  background: white;
+}
+
+
+.aboutRightContainer {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.rightContainer {
+  height: 80%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid black;
+}

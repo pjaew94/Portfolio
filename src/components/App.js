@@ -1,10 +1,11 @@
 import React, {useState, useRef} from 'react';
 import ReactDOM from 'react-dom'
 import './App.scss'
-import FadeTopBottom, {FadeLeftRight} from './Fade/Fade'
+import FadeTopBottom, {FadeLeftRight, FadeBottomTop} from './Fade/Fade'
 import NavBar from './navbar/NavBar'
 import LandingPage from './landing-page/LandingPage'
 import MyWorks from './myWorks/MyWorks'
+import About from './about/About'
 
 
 function App(props) {
@@ -14,9 +15,8 @@ function App(props) {
       <FadeTopBottom>
         <LandingPage />
       </FadeTopBottom>
-      <FadeLeftRight>
         <MyWorks />
-      </FadeLeftRight>
+        <About />
     </div>
   );
 }
